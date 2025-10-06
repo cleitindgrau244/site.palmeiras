@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmeiras - O Maior do Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .palmeiras-gradient {
+            background: linear-gradient(135deg, #006633, #004d26);
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .trophy-animation {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="palmeiras-gradient text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-green-600 font-bold text-xl">🏆</span>
+                    </div>
+                    <h1 class="text-2xl font-bold">Palmeiras</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#historia" class="hover:text-green-200 transition-colors">História</a>
+                    <a href="#titulos" class="hover:text-green-200 transition-colors">Títulos</a>
+                    <a href="#jogadores" class="hover:text-green-200 transition-colors">Jogadores</a>
+                    <a href="#estadio" class="hover:text-green-200 transition-colors">Estádio</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="palmeiras-gradient hero-pattern text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">Sociedade Esportiva Palmeiras</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">O maior campeão do Brasil, com mais de 100 anos de história, tradição e conquistas que marcaram o futebol mundial.</p>
+            <div class="flex justify-center space-x-8 text-center">
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <div class="text-3xl font-bold">1914</div>
+                    <div class="text-sm">Fundação</div>
+                </div>
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <div class="text-3xl font-bold trophy-animation">17</div>
+                    <div class="text-sm">Títulos Nacionais</div>
+                </div>
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <div class="text-3xl font-bold">3</div>
+                    <div class="text-sm">Libertadores</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conquistas Recentes -->
+    <section class="py-16 bg-gradient-to-r from-green-600 to-green-700 text-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12">Conquistas Recentes</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://s2.glbimg.com/JN8_4xJQQvQGjQf8wKQKQKQKQ=/0x0:1080x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/u/L/uLqKQKQKQKQKQKQKQKQ/palmeiras-libertadores-2020.jpg" alt="Palmeiras campeão da Libertadores 2020" class="w-full h-64 rounded-lg mb-4 object-cover" onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="w-full h-64 bg-white bg-opacity-20 rounded-lg mb-4 flex items-center justify-center" style="display: none;">
+                        <span class="text-6xl">🏆</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Libertadores 2020</h4>
+                    <p class="text-green-100">Conquista histórica após 21 anos</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://s2.glbimg.com/JN8_4xJQQvQGjQf8wKQKQKQKQKQ=/0x0:1080x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/u/L/uLqKQKQKQKQKQKQKQKQ/palmeiras-libertadores-2021.jpg" alt="Palmeiras bicampeão da Libertadores 2021" class="w-full h-64 rounded-lg mb-4 object-cover" onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="w-full h-64 bg-white bg-opacity-20 rounded-lg mb-4 flex items-center justify-center" style="display: none;">
+                        <span class="text-6xl">🏆</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Libertadores 2021</h4>
+                    <p class="text-green-100">Bicampeão consecutivo</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://s2.glbimg.com/JN8_4xJQQvQGjQf8wKQKQKQKQKQ=/0x0:1080x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/u/L/uLqKQKQKQKQKQKQKQKQ/palmeiras-brasileiro-2022.jpg" alt="Palmeiras campeão brasileiro 2022" class="w-full h-64 rounded-lg mb-4 object-cover" onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="w-full h-64 bg-white bg-opacity-20 rounded-lg mb-4 flex items-center justify-center" style="display: none;">
+                        <span class="text-6xl">🏆</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Brasileirão 2022</h4>
+                    <p class="text-green-100">11º título nacional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História -->
+    <section id="historia" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Nossa História</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 text-green-600">Fundação e Primeiros Anos</h4>
+                    <p class="text-gray-700 mb-6">Fundado em 26 de agosto de 1914, por imigrantes italianos no bairro da Barra Funda, em São Paulo, o Palmeiras nasceu com o nome de Palestra Itália. O clube foi criado para representar a comunidade italiana em São Paulo.</p>
+                    
+                    <h4 class="text-2xl font-bold mb-4 text-green-600">A Era Dourada</h4>
+                    <p class="text-gray-700 mb-6">Nas décadas de 1960 e 1970, o Palmeiras viveu sua era mais gloriosa, conquistando diversos títulos estaduais e nacionais, consolidando-se como uma das maiores forças do futebol brasileiro.</p>
+                    
+                    <h4 class="text-2xl font-bold mb-4 text-green-600">Tempos Modernos</h4>
+                    <p class="text-gray-700">Nos anos 2000, o clube se modernizou, construiu a Academia de Futebol e voltou a conquistar grandes títulos, incluindo três Libertadores da América.</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-4xl">🌴</span>
+                        </div>
+                        <h5 class="text-xl font-bold text-green-600">Curiosidades</h5>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2">•</span>
+                            O nome "Palmeiras" foi adotado em 1942
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2">•</span>
+                            Primeiro clube brasileiro a ter academia própria
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2">•</span>
+                            Maior campeão nacional do Brasil
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2">•</span>
+                            Único clube brasileiro tricampeão da Libertadores
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Nossos Títulos</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover text-center">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🏆</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-800">Títulos Internacionais</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>🏆 Copa Libertadores (1999, 2020, 2021)</li>
+                        <li>🏆 Copa Mercosul (1998)</li>
+                        <li>🏆 Copa Rio (1951)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🇧🇷</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-800">Títulos Nacionais</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>🏆 Brasileirão (11 títulos)</li>
+                        <li>🏆 Copa do Brasil (4 títulos)</li>
+                        <li>🏆 Copa dos Campeões (1)</li>
+                        <li>🏆 Supercopa do Brasil (1)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🏟️</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-800">Títulos Estaduais</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>🏆 Campeonato Paulista (25 títulos)</li>
+                        <li>🏆 Torneio Rio-São Paulo (5 títulos)</li>
+                        <li>🏆 Copa São Paulo de Juniores (1 título)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jogadores Históricos -->
+    <section id="jogadores" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Ídolos Eternos</h3>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-b from-green-50 to-white rounded-lg shadow-lg p-6 card-hover text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-white text-3xl">👑</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Ademir da Guia</h4>
+                    <p class="text-sm text-gray-600 mb-2">O Divino</p>
+                    <p class="text-xs text-gray-500">Maior ídolo da história do clube</p>
+                </div>
+                
+                <div class="bg-gradient-to-b from-green-50 to-white rounded-lg shadow-lg p-6 card-hover text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-white text-3xl">⚽</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Dudu</h4>
+                    <p class="text-sm text-gray-600 mb-2">O Artilheiro</p>
+                    <p class="text-xs text-gray-500">Maior artilheiro da era moderna</p>
+                </div>
+                
+                <div class="bg-gradient-to-b from-green-50 to-white rounded-lg shadow-lg p-6 card-hover text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-white text-3xl">🥅</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Marcos</h4>
+                    <p class="text-sm text-gray-600 mb-2">São Marcos</p>
+                    <p class="text-xs text-gray-500">Goleiro da conquista mundial</p>
+                </div>
+                
+                <div class="bg-gradient-to-b from-green-50 to-white rounded-lg shadow-lg p-6 card-hover text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-white text-3xl">🌟</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Rivaldo</h4>
+                    <p class="text-sm text-gray-600 mb-2">Bola de Ouro</p>
+                    <p class="text-xs text-gray-500">Melhor jogador do mundo em 1999</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-green-50 rounded-lg p-8">
+                <h4 class="text-2xl font-bold mb-6 text-center text-green-600">Elenco Atual - Destaques</h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white text-xl font-bold">W</span>
+                        </div>
+                        <h5 class="font-bold">Weverton</h5>
+                        <p class="text-sm text-gray-600">Goleiro - Seleção Brasileira</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white text-xl font-bold">G</span>
+                        </div>
+                        <h5 class="font-bold">Gustavo Gómez</h5>
+                        <p class="text-sm text-gray-600">Zagueiro - Capitão</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white text-xl font-bold">R</span>
+                        </div>
+                        <h5 class="font-bold">Raphael Veiga</h5>
+                        <p class="text-sm text-gray-600">Meia - Craque do time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Allianz Parque</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 text-green-600">A Casa do Palmeiras</h4>
+                    <p class="text-gray-700 mb-6">Inaugurado em 2014, o Allianz Parque é um dos estádios mais modernos do Brasil. Com capacidade para 43.713 torcedores, é conhecido pela atmosfera única criada pela torcida palmeirense.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white rounded-lg p-4 text-center shadow">
+                            <div class="text-2xl font-bold text-green-600">43.713</div>
+                            <div class="text-sm text-gray-600">Capacidade</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 text-center shadow">
+                            <div class="text-2xl font-bold text-green-600">2014</div>
+                            <div class="text-sm text-gray-600">Inauguração</div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="text-lg font-bold mb-3 text-green-600">Características:</h5>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-green-600 mr-2">✓</span> Gramado sintético de última geração</li>
+                        <li class="flex items-center"><span class="text-green-600 mr-2">✓</span> Cobertura total das arquibancadas</li>
+                        <li class="flex items-center"><span class="text-green-600 mr-2">✓</span> Sistema de som e iluminação modernos</li>
+                        <li class="flex items-center"><span class="text-green-600 mr-2">✓</span> Localização privilegiada em São Paulo</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mx-auto mb-4 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                            <div class="relative z-10 text-center">
+                                <span class="text-white text-8xl block mb-2">🏟️</span>
+                                <div class="text-white text-xl font-bold">ALLIANZ PARQUE</div>
+                                <div class="text-green-100 text-sm">A Casa do Verdão</div>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-gray-800">Recordes no Allianz Parque</h5>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-green-600 pl-4">
+                            <h6 class="font-bold text-gray-800">Maior Público</h6>
+                            <p class="text-sm text-gray-600">43.713 torcedores vs Corinthians (2014)</p>
+                        </div>
+                        <div class="border-l-4 border-green-600 pl-4">
+                            <h6 class="font-bold text-gray-800">Títulos Conquistados</h6>
+                            <p class="text-sm text-gray-600">2 Libertadores, 2 Brasileirões, 1 Copa do Brasil</p>
+                        </div>
+                        <div class="border-l-4 border-green-600 pl-4">
+                            <h6 class="font-bold text-gray-800">Invencibilidade</h6>
+                            <p class="text-sm text-gray-600">Mais de 30 jogos sem perder em casa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Torcida -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">A Maior Torcida do Brasil</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-3xl">👥</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">18 milhões</h4>
+                    <p class="text-gray-600">Torcedores pelo Brasil</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-3xl">🌍</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Mundial</h4>
+                    <p class="text-gray-600">Presença em todos os continentes</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-3xl">🎵</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Mancha Verde</h4>
+                    <p class="text-gray-600">Maior torcida organizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="palmeiras-gradient text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                            <span class="text-green-600 font-bold">🏆</span>
+                        </div>
+                        <h4 class="text-xl font-bold">Palmeiras</h4>
+                    </div>
+                    <p class="text-green-100">O maior campeão do Brasil, com mais de 100 anos de história e tradição.</p>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Links Rápidos</h5>
+                    <ul class="space-y-2 text-green-100">
+                        <li><a href="#historia" class="hover:text-white transition-colors">História</a></li>
+                        <li><a href="#titulos" class="hover:text-white transition-colors">Títulos</a></li>
+                        <li><a href="#jogadores" class="hover:text-white transition-colors">Jogadores</a></li>
+                        <li><a href="#estadio" class="hover:text-white transition-colors">Estádio</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Contato</h5>
+                    <ul class="space-y-2 text-green-100">
+                        <li>📍 Rua Palestra Itália, 200</li>
+                        <li>📞 (11) 3873-2000</li>
+                        <li>✉️ contato@palmeiras.com.br</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Redes Sociais</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <span>📘</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <span>🐦</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <span>📺</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-500 mt-8 pt-8 text-center text-green-100">
+                <p>&copy; 2024 Sociedade Esportiva Palmeiras. Todos os direitos reservados.</p>
+                <p class="mt-2">Avanti Palestra! 💚</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para os links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animação de contadores
+        function animateCounters() {
+            const counters = document.querySelectorAll('.trophy-animation');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+
+        // Executar animação quando a página carregar
+        window.addEventListener('load', animateCounters);
+
+        // Efeito de parallax suave no hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-pattern');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98a5a5be200bc20f',t:'MTc1OTc1ODgzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
